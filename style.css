@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+h1 {
+    color: #66BFBF;
+    font-family: 'Sacramento', cursive;
+    font-size: 5.625rem;
+    margin-top: 0;
+    padding: 100px 0 0;
+}
+h2 {
+    color: #66BFBF;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+h3 {
+    color: #11999E;
+}
+p {
+    color: #333333;
+    line-height: 2;
+    text-align: left;
+}
+a {
+    margin: 8px;
+    text-decoration: none;
+}
+hr {
+    border: 6px dotted silver;
+    border-bottom: none;
+    width: 5%;
+}
+.fa {
+    border-radius: 100%;
+    color: white;
+    padding: 15px;
+    width: 15px;
+    transition-duration: 0.35s;
+}
+.fa:hover {
+    transform: rotate(360deg);
+    transition-duration: 0.35s;
+}
+.fa-facebook {
+    background: #3B5998;
+}
+.fa-linkedin {
+    background: #007bb5;
+}
+.fa-dribbble {
+    background: #ea4c89;
+}
+.earth-img {
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+}
+.html-img, .javascript-img{
+    float: left;
+    margin-right: 40px;
+    transition-duration: 0.35s;
+}
+.css-img {
+    float: right;
+    margin-left: 40px;
+    transition-duration: 0.35s;
+}
+.skills img {
+    width: 150px;
+}
+.profile-img {
+    background-color: #66BFBF;
+    border-radius: 10px;
+    width: 150px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+    transition-duration: 0.2s;
+}
+.profile-img:hover {
+    transform: scale(1.05);
+    transition-duration: 0.2s;
+}
+.animate-right {
+    position: relative;
+    animation-name: animateright;
+    animation-duration: 1s;
+}
+.animate-left {
+    position: relative;
+    animation-name: animateleft;
+    animation-duration: 1s;
+}
+.animate-bottom {
+    position: relative;
+    animation-name: animatebottom;
+    animation-duration: 1s;
+}
+.top-container {
+    background-color: #f4f4f4;
+}
+.middle-container {
+    background-color: #f8f8f8;
+    padding: 100px 0;
+    overflow: hidden;
+}
+.bottom-container {
+    background-color: #f4f4f4;
+    padding: 30px 0 10px;
+}
+#first, #firstAnimationLeft, #firstAnimationRight,
+#secondAnimationLeft, #secondAnimationRight,
+#thirdAnimationLeft, #thirdAnimationRight {
+    visibility: hidden;
+}
+.web {
+    text-decoration: underline;
+}
+.intro {
+    width: 40%;
+    margin: auto;
+    margin-bottom: 60px;
+}
+.copyright {
+    color: #333333;
+    font-size: 0.75rem;
+    text-align: center;
+    margin-top: 16px;
+}
+.skills {
+    margin-bottom: 20px;
+}
+.skills h2 {   
+    margin: 50px 0 40px;
+}
+.skills h3 {
+    visibility: hidden;
+}
+.skill-row {
+    width: 40%;
+    margin: auto;
+    padding: 40px;
+}
+.skill-row h3 {
+    margin-top: 40px;
+}
+.contact h2 {
+    margin-top: 50px;
+}
+.contact-message {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.btn {
+    background: #11cdd4;
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+.btn:hover {
+    background: #30e3cb;
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    cursor: pointer;
+}
+@keyframes animateright {
+    from {right: -300px; opacity: 0}
+    to {right:0; opacity: 1}
+}
+@keyframes animateleft {
+    from {left: -300px; opacity: 0}
+    to {left: 0; opacity: 1}
+}
+@keyframes animatebottom {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+@media only screen and (max-width: 735px) {
+    .html-img {
+        float: none;
+        margin-right: 0;
+    }
+    .css-img {
+        float: none;
+        margin-left: 0;
+    }
+    .javascript-img {
+        float: none;
+        margin-right: 0;
+    }
+    .skill-row {
+        padding: 20px;
+    }
+    .skill-row h3 {
+        margin-top: 20px;
+    }
+    p {
+        text-align: center;
+    }
+}
